@@ -7,14 +7,12 @@ Final resalt
 
 ИНСТРУКЦИЯ:
 Для запуска проекта требуется выполнить следующие команды в консоле:
-    frontend/
-       npm i
-       npm run build
-       npm start
+    pip install npm
     server/
        pip install pandas flask flask_cors
        python3 server.py run
-
+    frontend/
+       npm start
 
 Цели:
   1. Привлечение новых активных пользователей банка.
