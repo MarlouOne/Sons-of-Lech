@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Уважаемые эксперты, команда Sons of Lech предоставляет вашему вниманию свое решенние,
+задачи:"Рекомендательный сервис для оценки эффективности новых цифровых каналов продвижения продуктов банка".
 
-In the project directory, you can run:
+ИНСТРУКЦИЯ:
+Для запуска проекта требуется выполнить следующие команды в консоле:
+    frontend/
+       npm i
+       npm run build
+       npm start
+    server/
+       pip install pandas flask flask_cors
+       python3 server.py run
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Цели:
+  1. Привлечение новых активных пользователей банка.
+  2. Анализ предполагаемой эффективности возможных цифровых площадок.
+  3. Создание web приложения , помогающего в принятие решений.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Задачи:
+  1. Анализ исходных данных и выявление среднестатистического пользователя.
+  2. Сбор данных из открытых источников 
+  3. Анализ эффективности размещения рекламы на площадках
+  4. Создание web приложения.
 
-### `npm test`
+Методология решения задачи:
+  1. Производиться статистический анализ базы данных из технического задания , результатом которого будет определение
+    среднестатистического пользователя.
+  2. Из данного предсавления пользователя обращаем внимание на промежуточный остаток  - предположим , что именно этой суммой может оперировать
+     банк.
+  3. Основными направлениями деятельности «Банк Уралсиб» являются розничный, корпоративный и инвестиционно-банковский бизнес, 
+     исходя из этого , можно сказать что целевой аудиторией являются люди заинтересованные в бизнесе,инвестициях.
+  4. Нахождение открытых источников, представляющих данные о цене рекламы на цифровых площадках, количестве 
+     подписчиков(пользователей), охвате аудитории и других данных.
+  5. Анализ полученных данных из открытых источников. Основными показателями эффективности будем считать -
+     количество новых пользователей , cтоимость привлечения нового пользователя и  прибыль от эффективности использования 
+     рекламы на данной площадке.
+  6. Количество новых пользователей представляет с собой произведения количества просмотров рекламы, на показатель кликабельности
+     умноженный на коэффициент эффективности (Нами было взято значение 5% значит из 100 человек на сайт только 5 оформят 
+     карту и в дальнейшем станут активными пользователями).
+  7. Cтоимость привлечения нового пользователя представляет собой стоимость размещения рекламы на площадки , деленная на 
+     количество новых пользователей.
+  8. Прибыль от эффективности использования рекламы на данной площадке - это прибыль которую нам принесёт количество 
+     новых пользователей умноженное на промежуточный остаток , среднестатистического пользователя.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Основная часть:
+  Web приложение неписанное на языках программирования : Python, JavaScript с использованием таких  фреймворков как Flask,React.js
+  анализ данных производиться с помощью  фреймворка Pandas.
 
-### `npm run build`
+Дальнейшее развитие проекта:
+  1. Увеличение охвата цифровых площадок.
+  2. Усовершенствование методологии расчета основных показателей эффективности.
+  3. Усовершенствование функциональности приложения.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
